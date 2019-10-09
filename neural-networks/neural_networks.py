@@ -30,7 +30,7 @@ weights=[ np.array([1,1]), np.array([1,0]), np.array([2,1])]
 input=np.array([0,3])
 output=6
 
-# learning rate, i.e the kind  of the 
+# learning rate, it is a kind  of a 
 # hyperparameter that decides how fast
 # your model learn and how accurate 
 # your model is 
