@@ -31,8 +31,10 @@ input=np.array([0,3])
 output=6
 
 # learning rate, i.e the kind  of the 
-# dx  in loss function
-learning_rate = 0.01 
+# hyperparameter that decides how fast
+# your model learn and how accurate 
+# your model is 
+learning_rate = 0.012
 
 error_history=[]
 
@@ -43,8 +45,9 @@ error_history=[]
 
 for i in range(30):
     predicted_output=predict( input, weights )
+    print(predicted_output,sep=', ')
     error=abs( output-predicted_output )
-    slope=2 * input * error 
+    slope= 2 * input * error 
     weights=weights - learning_rate * slope
     error_history.append(error)
 
